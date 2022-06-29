@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/mini.normalize.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <!-- <link rel="stylesheet" href="./css/nozmalize.css"> -->
+
 </head>
 <body>
     <!-- start header -->
@@ -28,6 +30,34 @@
                             <a href="./hizmatlar.html" class="header-list-box-text">
                                 Xizmatlar
                             </a>
+
+                            <ul class="hizmatlar-hover-list">
+                                <li class="hizmatlar-hover-list-box">
+                                    <a class="hizmatlar-hover-link" href="./websayt.html">
+                                        Vebsayt
+                                    </a>
+                                </li>
+                                <li class="hizmatlar-hover-list-box">
+                                    <a class="hizmatlar-hover-link" href="./telegram-bot.html">
+                                        Telegram bot
+                                    </a>
+                                </li>
+                                <li class="hizmatlar-hover-list-box">
+                                    <a class="hizmatlar-hover-link" href="./smm.html">
+                                        SMM
+                                    </a>
+                                </li>
+                                <li class="hizmatlar-hover-list-box">
+                                    <a class="hizmatlar-hover-link" href="./grafik-dz.html">
+                                        Grafik dizayn
+                                    </a>
+                                </li>
+                                <li class="hizmatlar-hover-list-box">
+                                    <a class="hizmatlar-hover-link" href="./crm.html">
+                                        CRM tizim
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-list-box">
                             <a href="./portfolio.html" class="header-list-box-text">
@@ -45,7 +75,7 @@
                             </a>
                         </li>
                         <li class="header-list-box">
-                            <a  href="./kontaktlar.html" class="header-list-box-text">
+                            <a  href="#kontakrlar" class="header-list-box-text">
                                 Kontaktlar
                             </a>
                         </li>
@@ -74,7 +104,7 @@
                             Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
                         </p>
 
-                        <a href="./hizmatlar.html" class="header-tel hero-button">
+                        <a href="#hizmatlar" class="header-tel hero-button">
                             Xizmatlar bilan tanishish
                         </a>
                     </div>
@@ -85,7 +115,7 @@
         <!-- finish hero -->
 
         <!-- start section (Hizmatlar) -->
-        <section>
+        <section id="hizmatlar">
             <div class="container">
                 <div class="hizmatlar-father-box">
                     <h2 class="hizmatlar-title"> 
@@ -155,7 +185,7 @@
                     </ol>
 
                     <div class="hizmatlar-buttons">
-                        <a href="./buyurtma.html" class="header-tel hero-button">
+                        <a href="#buyurtma-berish" class="header-tel hero-button">
                             Buyurtma berish
                         </a>
 
@@ -242,7 +272,7 @@
                         
                     </ul>
                     <div style="display: flex; justify-content: center;">
-                        <a href="./hizmatlar.html" class="hizmatlar-link-box header-tel hero-button">
+                        <a href="#buyurtma-berish" class="hizmatlar-link-box header-tel hero-button">
                             Buyurtma berish
                         </a>
                     </div>
@@ -254,7 +284,7 @@
         
         
         <!-- start- section(Buyurtma berish) -->
-        <section class="buyurtma">
+        <section class="buyurtma" id="buyurtma-berish">
             <div class="container">
                 <div class="buyurtma-fahter-box">
                     <div class="weigth-some-text">
@@ -269,8 +299,8 @@
                     <form class="buyurtma-info" action="https://echo.htmlacademy.ru/courses" autocomplete="off" method="post">
                         <input class="buyurtma-input" type="text" aria-label="Ismingiz" name="user-name" placeholder="Ismingiz" required>
                         <input class="buyurtma-input" type="tel" aria-label="Telefon raqamingiz" name="user-phone-number" placeholder="Telefon raqamingiz" required>
-                        <select class="buyurtma-input" name="hizmat-turi" id="hizmatlar-turi" >
-                            <option value="1" disabled selected>Vebsayt tuzish</option>
+                        <select class="buyurtma-input" name="hizmat-turi" id="hizmatlar-turi" required>
+                            <option value disabled selected>Vebsayt tuzish</option>
                             <option value="2">Telegram bot</option>
                             <option value="3">SMM</option>
                             <option value="4">Grafik dizayn</option>
@@ -287,7 +317,7 @@
         </section>
         <!-- finish section(Buyurtma berish) -->
     </main>
-    <footer>
+    <footer id="kontakrlar">
         <div class="container">
             <div class="footer-father-box">
                 <div class="footer-boxes">
@@ -365,3 +395,4 @@
     </footer>
 </body>
 </html>
+
